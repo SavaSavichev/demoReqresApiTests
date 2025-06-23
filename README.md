@@ -46,36 +46,35 @@ cypress/
 - **JSON Fixtures** for test data
 - **Modular API design** via service/helper classes
 
-## How to Run Tests
+## Quick start
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/SavaSavichev/demoReqresApiTests.git
-   cd demoReqresApiTests
-   Install dependencies:
-   ```
+### 1. Clone the repository
 
-bash
-Copy
-Edit
+```bash
+git clone https://github.com/SavaSavichev/demoReqresApiTests.git
+cd demoWebShopJS
+```
+
+### 2. Install dependencies
+
+```bash
 npm install
-Open Cypress UI:
+```
 
-bash
-Copy
-Edit
+### 3. Run Cypress tests
+
+To open Cypress Test Runner (interactive mode):
+
+```bash
 npx cypress open
-Or run tests in headless mode:
+```
 
-bash
-Copy
-Edit
+To run tests in headless mode (without UI):
+
+```bash
 npx cypress run
-Notes
-All tests use a shared base URL and API key set via apiConfig.js
+```
 
-failOnStatusCode: false is used in negative tests to handle expected error responses
-
-The project avoids hardcoding where possible and follows best practices for reusability and readability
+---
 
 Thank you for your attention!
