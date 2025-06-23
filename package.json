@@ -1,0 +1,16 @@
+{
+  "name": "reqres-api-tests",
+  "version": "1.0.0",
+  "description": "Pet project for API testing with Cypress and ReqRes",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "open": "cypress open"
+  },
+  "keywords": ["cypress", "api", "testing", "reqres"],
+  "author": "Artem Savichev",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.0.0"
+  }
+}
