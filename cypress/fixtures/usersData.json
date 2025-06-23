@@ -103,5 +103,10 @@
     "email": "e@e.c",
     "first_name": "Andrew",
     "last_name": "Rosha"
+  },
+  "updateUser1": {
+    "email": "e@e.c",
+    "first_name": "Aaron",
+    "last_name": "Mash"
   }
 }

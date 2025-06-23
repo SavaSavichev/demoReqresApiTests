@@ -54,4 +54,26 @@ describe("User API tests", () => {
       expect(response.status).to.be.eq(204);
     });
   });
+
+  it("Сreate, update and delete user successfully", () => {
+    let userId;
+
+    UsersApi.createUser(usersData.newUser)
+      .then((response) => {
+        expect(response.status).to.be.eq(201);
+        userId = response.body.id;
+        expect(userId).to.exist;
+
+        return UsersApi.updateUser(userId, usersData.updateUser1);
+      })
+      .then((updateRes) => {
+        expect(updateRes.status).to.eq(200);
+        expect(updateRes.body).to.include(usersData.updateUser1);
+
+        return UsersApi.deleteUser(userId);
+      })
+      .then((deleteRes) => {
+        expect(deleteRes.status).to.eq(204);
+      });
+  });
 });
