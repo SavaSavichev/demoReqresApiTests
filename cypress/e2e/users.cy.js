@@ -3,24 +3,29 @@
 import { UsersApi } from "../support/api/usersApi";
 import usersData from "../fixtures/usersData.json";
 
-describe('ReqRes API tests', () => {
-
-  it('Get page 1 in list of users', () => {
-    UsersApi.getUsers(1).its("body.data").then((data) => {
-      expect(data).to.be.eql(usersData.usersPage1);
-    });
+describe("User API tests", () => {
+  it("Get page 1 in list of users", () => {
+    UsersApi.getUsers(1)
+      .its("body.data")
+      .then((data) => {
+        expect(data).to.be.eql(usersData.usersPage1);
+      });
   });
 
   it("Get page 2 in list of users", () => {
-    UsersApi.getUsers(2).its("body.data").then((data) => {
-      expect(data).to.be.eql(usersData.usersPage2);
-    });
+    UsersApi.getUsers(2)
+      .its("body.data")
+      .then((data) => {
+        expect(data).to.be.eql(usersData.usersPage2);
+      });
   });
 
-  it("Get user", () => {
-    UsersApi.getUser(3).its("body.data").then((data) => {
-      expect(data).to.be.eql(usersData.user3);
-    });
+  it("Get single user by ID", () => {
+    UsersApi.getUser(3)
+      .its("body.data")
+      .then((data) => {
+        expect(data).to.be.eql(usersData.user3);
+      });
   });
 
   it("Get non-existent user", () => {

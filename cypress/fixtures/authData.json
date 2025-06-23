@@ -1,0 +1,15 @@
+{
+  "successLogin": {
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+  },
+  "unsuccessLogin": {
+    "email": "peter@klaven"
+  },
+  "successResponce": {
+    "token": "QpwL5tke4Pnpja7X4"
+  },
+  "unsuccessResponce": {
+    "error": "Missing password"
+  }
+}

@@ -1,17 +1,11 @@
-const BASE_URL = "https://reqres.in/api";
-const API_KEY_HEADER = "x-api-key";
-const API_KEY_VALUE = "reqres-free-v1";
-
-const getHeaders = () => ({
-  [API_KEY_HEADER]: API_KEY_VALUE
-});
+import { BASE_URL, getHeaders } from "./apiConfig";
 
 export class UsersApi {
   static getUsers(page = 1) {
     return cy.request({
       method: "GET",
       url: `${BASE_URL}/users?page=${page}`,
-      headers: getHeaders()
+      headers: getHeaders(),
     });
   }
 
@@ -20,7 +14,7 @@ export class UsersApi {
       method: "GET",
       url: `${BASE_URL}/users/${id}`,
       headers: getHeaders(),
-      failOnStatusCode
+      failOnStatusCode,
     });
   }
 
@@ -29,7 +23,7 @@ export class UsersApi {
       method: "POST",
       url: `${BASE_URL}/users`,
       headers: getHeaders(),
-      body: data
+      body: data,
     });
   }
 
@@ -38,7 +32,7 @@ export class UsersApi {
       method: "PUT",
       url: `${BASE_URL}/users/${id}`,
       headers: getHeaders(),
-      body: data
+      body: data,
     });
   }
 
@@ -46,7 +40,7 @@ export class UsersApi {
     return cy.request({
       method: "DELETE",
       url: `${BASE_URL}/users/${id}`,
-      headers: getHeaders()
+      headers: getHeaders(),
     });
   }
 
@@ -56,7 +50,7 @@ export class UsersApi {
       url: `${BASE_URL}/login`,
       headers: getHeaders(),
       failOnStatusCode,
-      body: data
+      body: data,
     });
   }
 }

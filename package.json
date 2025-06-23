@@ -7,7 +7,12 @@
     "test": "cypress run",
     "open": "cypress open"
   },
-  "keywords": ["cypress", "api", "testing", "reqres"],
+  "keywords": [
+    "cypress",
+    "api",
+    "testing",
+    "reqres"
+  ],
   "author": "Artem Savichev",
   "license": "MIT",
   "devDependencies": {
