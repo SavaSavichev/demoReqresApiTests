@@ -1,0 +1,16 @@
+{
+  "successfulUser": {
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+  },
+  "successfulResponse": {
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+  },
+  "unsuccessfulUser": {
+    "email": "peter@klaven"
+  },
+  "unsuccessfulResponse": {
+    "error": "Missing password"
+  }
+}
