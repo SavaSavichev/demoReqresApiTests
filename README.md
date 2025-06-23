@@ -21,22 +21,7 @@ It is structured as a real-world test automation project, showcasing best practi
 
 ## Project Structure
 
-cypress/
-├── e2e/ # All test cases
-│ ├── auth.cy.js
-│ ├── register.cy.js
-│ └── users.cy.js
-├── fixtures/ # Test data (JSON)
-│ ├── authData.json
-│ ├── regData.json
-│ └── usersData.json
-├── support/
-│ └── api/ # API-layer abstraction (Service Object)
-│ ├── authApi.js
-│ ├── regApi.js
-│ └── usersApi.js
-│ └── apiConfig.js
-└──
+<pre> ```plaintext cypress/ ├── e2e/ # All test cases │ ├── auth.cy.js │ ├── register.cy.js │ └── users.cy.js ├── fixtures/ # Test data (JSON) │ ├── authData.json │ ├── regData.json │ └── usersData.json ├── support/ │ └── api/ # API-layer abstraction (Service Object) │ ├── authApi.js │ ├── regApi.js │ ├── usersApi.js │ └── apiConfig.js ``` </pre>
 
 ## Technology Stack
 
